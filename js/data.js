@@ -19,7 +19,7 @@ const REASONS = [
   "po prostu jesteś, a to dla mnie wszystko"  
 ];
 
-const EXTS = ["jpg", "jpeg", "png", "webp", "JPG", "PNG"];
+const EXTS = ["jpg", "jpeg", "png", "webp", "JPG", "JPEG", "PNG", "WEBP"];
 
 function loadPhoto(img, n) {
   let i = 0;
