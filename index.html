@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kocham Cię, bo...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Kocham Cię, bo...</h1>
+    <p class="sub">Kliknij fiszkę, żeby ją odwrócić</p>
+    <div class="stage" id="stage">
+      <button class="card" id="card" aria-label="Odwróć fiszkę">
+        <div class="face front"><img id="photo" alt="Nasze zdjęcie"></div>
+        <div class="face back" id="text"></div>
+      </button>
+    </div>
+    <div class="controls">
+      <button class="btn" id="prev" aria-label="Poprzednia fiszka">‹</button>
+      <span class="count" id="count"></span>
+      <button class="btn" id="next" aria-label="Następna fiszka">›</button>
+    </div>
+    <p class="hint">Przesuń palcem lub użyj strzałek na klawiaturze</p>
+    <a class="link" href="lista.html">Zobacz wszystkie powody ❤</a>
+  </main>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

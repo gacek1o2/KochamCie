@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wszystkie powody – Kocham Cię, bo...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Wszystkie powody</h1>
+    <ul class="list" id="list"></ul>
+    <a class="link" href="index.html">‹ Wróć do fiszek</a>
+  </main>
+  <script src="js/data.js"></script>
+  <script>
+    const list = document.getElementById("list");
+    REASONS.forEach((t, i) => {
+      const li = document.createElement("li");
+      li.className = "tile";
+      li.innerHTML = '<div class="ph"><img alt="Zdjęcie ' + (i + 1) + '"></div><p><span><b>Kocham Cię, bo</b> ' + t + '</span></p>';
+      loadPhoto(li.querySelector("img"), i + 1);
+      list.appendChild(li);
+    });
+  </script>
+</body>
+</html>
