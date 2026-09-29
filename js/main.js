@@ -9,7 +9,7 @@ const total = REASONS.length;
 function show() {
   loadPhoto(photo, i + 1);
   text.textContent = "…" + REASONS[i];
-  count.textContent = (i + 1) + " / " + total;
+  count.textContent = (i + 1) + " / 3*6";
 }
 
 function go(dir) {
